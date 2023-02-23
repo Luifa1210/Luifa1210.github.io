@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  margin: 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.8;
+}
+
+/* Barra de navegacion */
+.navbar {
+  display: flex;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(190, 190, 190));
+}
+
+/* Links de barra de navegacion */
+.navbar a {
+  color:white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-style: bold;
+  font-size: 23px;
+}
+
+/* Cambio de color del link */
+.navbar a:hover {
+  background-color: #ddd;
+  color:  rgb(0, 0, 0);
+}
+
+/* Columna */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: rgb(214, 214, 214);
+}
+
+/* Contenido */
+.main {
+  flex: 70%;
+  background-color: rgb(214, 214, 214);
+  padding-left: 20px;
+  padding-bottom: 18px;
+  margin-top: 0px;
+}
+
+.titulo {
+  background-color: rgb(64, 196, 52);
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding: 7px;
+  margin-bottom: 0px;
+}
+
+.titulo1 {
+  background-color: rgb(29, 189, 218);
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding: 7px;
+  margin-bottom: 0px;
+}
+
+.titulo2 {
+  background-color: rgb(229, 233, 13);
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding: 7px;
+  margin-bottom: 0px;
+}
+
+.titulo3 {
+  background-color: rgb(255, 60, 0);
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding: 7px;
+  margin-bottom: 0px;
+}
+
+.titulo4 {
+  background-color: rgb(142, 44, 255);
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding: 7px;
+  margin-bottom: 0px; 
+}
+
+.titulo5 {
+  background-color: rgb(255, 0, 0);
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding: 7px;
+  width: 90%;
+  margin-bottom: 0px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mis datos */
+.contacto {
+  background-color: rgb(252, 179, 179);
+  width: 90%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px; 
+  padding-left: 10px;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(255, 0, 0);
+  border-left: 3px solid rgb(255, 0, 0);
+  font-size: 16px;
+  
+}
+
+.perfil {
+  background-color: rgb(177, 216, 175);
+  width: 90%; 
+  margin-top: 0px; 
+  padding-left: 10px;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(64, 196, 52);
+  border-left: 3px solid rgb(64, 196, 52);
+}
+
+.laboral {
+  background-color: rgb(200, 242, 250);
+  width: 90%; 
+  margin-top: 0px; 
+  padding-left: 10px;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(29, 189, 218);
+  border-left: 3px solid rgb(29, 189, 218);
+}
+
+.educacion {
+  background-color: rgb(254, 255, 214);
+  width: 90%; 
+  margin-top: 0px; 
+  padding-left: 10px;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(229, 233, 13);
+  border-left: 3px solid rgb(229, 233, 13);
+}
+
+.referencias {
+  background-color: rgb(255, 204, 188); 
+  width: 90%; 
+  margin-top: 0px; 
+  padding-left: 10px;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(255, 60, 0);
+  border-left: 3px solid rgb(255, 60, 0);
+}
+
+.info {
+  background-color: rgb(205, 162, 255); 
+  width: 90%; 
+  margin-top: 0px; 
+  padding-left: 10px;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(142, 44, 255);
+  border-left: 3px solid rgb(142, 44, 255);
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
